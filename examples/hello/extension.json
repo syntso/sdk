@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schema/extension.schema.json",
+  "id": "hello",
+  "name": "Hello",
+  "version": "0.1.0",
+  "description": "Greets whoever calls it.",
+  "actions": [
+    {
+      "name": "greet",
+      "title": "Say hello",
+      "risk": "read",
+      "params": {
+        "type": "object",
+        "properties": { "name": { "type": "string" } }
+      },
+      "output": {
+        "type": "object",
+        "properties": { "greeting": { "type": "string" } }
+      },
+      "agents": true
+    }
+  ]
+}
